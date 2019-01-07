@@ -20,7 +20,7 @@ def createNumberImage():
     fillColor = (255,255,255)
     # 显示位置
     position = (500,300)
-    for i in range(1,2001):
+    for i in range(1,9001):
         # 读取一张黑色纯色背景图
         image = cv2.imread("row/black.jpg")
         # 先将图片转换成PIL格式
@@ -32,6 +32,7 @@ def createNumberImage():
         image = cv2.cvtColor(np.asarray(image_PIL), cv2.COLOR_RGB2BGR)
         # cv2.imshow("asdas",image)
         saveFileName = "createArray/" + str(i) + ".jpg"
+        print("正在生成第{}张图片.".format(i))
         cv2.imwrite(saveFileName,image)
     # cv2.waitKey(0)
 
