@@ -1,0 +1,3 @@
+该程序是一个使用opencv-python创建一张纯色背景图以及创建2000张带有数字的图片
+python3 createArrayImage即可
+
